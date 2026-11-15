@@ -1,32 +1,29 @@
-# Hi, I'm Nikhila
+# Nikhila Vankayalapati
 
-### AI Engineering · Generative AI · Machine Learning
+**Applied AI · Retrieval and evaluation · Machine learning**
 
-I'm building a portfolio focused on useful AI applications: retrieval-augmented generation, agentic workflows, and machine learning systems that can be evaluated and reproduced.
+I build Python projects that show how an AI workflow retrieves evidence, handles uncertainty, and measures its results.
 
-My interests span healthcare AI, reliable APIs, model evaluation, and translating business problems into practical software.
+## Featured project · Healthcare claims workflow
 
-## Engineering focus
+[Health-care_claims](https://github.com/nikhila102/Health-care_claims) is an educational project using fictional policies and synthetic data.
 
-- **Generative AI:** document retrieval, grounded answers, citations, and evaluation.
-- **Agentic systems:** tool calling, structured outputs, workflow orchestration, and failure handling.
-- **Machine learning:** reproducible experiments, baseline comparisons, and deployment.
-- **Software quality:** clear setup instructions, meaningful tests, and documented limitations.
+- **Retrieval and citations** — Rank fictional policy passages and return exact source quotes in structured JSON.
+- **Human review** — Route unverified or external policy questions to a reviewer before retrieval. In-scope questions with weak matches also go to review.
+- **Reproducible evaluation** — Inspect retrieval ranking and abstention on authored questions. A separate synthetic regression experiment compares a linear model with a training-mean baseline on held-out data.
 
-## Explore my work
+From the project checkout, run the routing demo with Python 3.10+ and no extra packages.
 
-| Repository | Focus |
-| --- | --- |
-| [Healthcare claims](https://github.com/nikhila102/Health-care_claims) | Healthcare claims project under development |
-| [HR analytics](https://github.com/nikhila102/HR-ANALYTICS) | Analytics project |
-| [Portfolio](https://github.com/nikhila102/portfolio) | Portfolio repository |
+```bash
+python -m src.claims_workflow "appeal denial" --scope demo-policy
+python -m unittest discover -s tests -p test_claims_workflow.py -v
+```
 
-These repositories are evolving. Each project's documentation is the source of truth for its implemented features, setup, and validation status.
+The demo uses lexical retrieval and rule-based routing. Its citations are candidates for review. The synthetic evaluations measure behavior on the included examples.
 
-## What I'm building toward
+## More projects
 
-End-to-end AI projects with runnable examples, transparent evaluation, and clear explanations of design decisions and tradeoffs.
-
-## Connect
+- [HR analytics](https://github.com/nikhila102/HR-ANALYTICS)
+- [Portfolio](https://github.com/nikhila102/portfolio)
 
 [LinkedIn](https://www.linkedin.com/in/nikhila-reddy-0839b51b7)
