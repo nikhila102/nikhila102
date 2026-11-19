@@ -21,6 +21,10 @@ python -m unittest discover -s tests -p test_claims_workflow.py -v
 
 The demo uses lexical retrieval and rule-based routing. Its citations are candidates for review. The synthetic evaluations measure behavior on the included examples.
 
+## Python codebase search
+
+[Python Codebase Search](codebase-search/) finds relevant functions and classes in local Python files and returns exact line references. On the included fictional clinic fixture, it ranked the expected function first for five queries and returned no result for one unrelated query. The demo uses keyword retrieval.
+
 ## More projects
 
 - [HR analytics](https://github.com/nikhila102/HR-ANALYTICS)
