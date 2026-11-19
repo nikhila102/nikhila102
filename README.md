@@ -1,33 +1,19 @@
-# Nikhila Vankayalapati
+<p align="center"><img src="assets/intro.svg?v=1" alt="Nikhila Vankayalapati · AI Engineer, Generative AI Engineer, ML Engineer, Data Scientist. I build AI tools that show their evidence." width="380" /></p>
 
-**Applied AI · Retrieval and evaluation · Machine learning**
+<p align="center"><img src="assets/right-now.svg?v=1" alt="Building an AI Job Application Assistant, learning Applied AI and ML, and reading AI engineering articles." width="380" /></p>
 
-I build Python projects that show how an AI workflow retrieves evidence, handles uncertainty, and measures its results.
+<p align="center"><img src="assets/toolkit.svg?v=1" alt="Toolkit includes Python, SQL, Java, LangChain, LangGraph, RAG, PyTorch, TensorFlow, scikit-learn, Streamlit, FastAPI, AWS Bedrock, Git, Docker, and MLflow." width="380" /></p>
 
-## Featured project · Healthcare claims workflow
+<p align="center"><img src="assets/card.svg?v=1" alt="Nikhila’s trading card. She studies applied AI in a DBA program, writes about AI on Substack, and builds healthcare demos with synthetic data." width="380" /></p>
 
-[Health-care_claims](https://github.com/nikhila102/Health-care_claims) is an educational project using fictional policies and synthetic data.
+## Projects
 
-- **Retrieval and citations** — Rank fictional policy passages and return exact source quotes in structured JSON.
-- **Human review** — Route unverified or external policy questions to a reviewer before retrieval. In-scope questions with weak matches also go to review.
-- **Reproducible evaluation** — Inspect retrieval ranking and abstention on authored questions. A separate synthetic regression experiment compares a linear model with a training-mean baseline on held-out data.
+| Project | What it does |
+| --- | --- |
+| [Healthcare Claims Workflow](https://github.com/nikhila102/Health-care_claims) | Retrieves evidence from fictional policies and routes uncertain questions to human review. |
+| [Python Codebase Search](https://github.com/nikhila102/nikhila102/tree/main/codebase-search) | Finds functions and classes in local Python code and returns exact file and line references. |
+| [AI Job Application Assistant](https://github.com/nikhila102/ai-job-application-assistant) | A Streamlit project in progress for capturing job preferences and building a career profile. |
 
-From the project checkout, run the routing demo with Python 3.10+ and no extra packages.
+<p align="center"><img src="assets/say-hi.svg?v=1" alt="Nikhila waves next to LinkedIn and GitHub contact cards." width="380" /></p>
 
-```bash
-python -m src.claims_workflow "appeal denial" --scope demo-policy
-python -m unittest discover -s tests -p test_claims_workflow.py -v
-```
-
-The demo uses lexical retrieval and rule-based routing. Its citations are candidates for review. The synthetic evaluations measure behavior on the included examples.
-
-## Python codebase search
-
-[Python Codebase Search](codebase-search/) finds relevant functions and classes in local Python files and returns exact line references. On the included fictional clinic fixture, it ranked the expected function first for five queries and returned no result for one unrelated query. The demo uses keyword retrieval.
-
-## More projects
-
-- [HR analytics](https://github.com/nikhila102/HR-ANALYTICS)
-- [Portfolio](https://github.com/nikhila102/portfolio)
-
-[LinkedIn](https://www.linkedin.com/in/nikhila-reddy-0839b51b7)
+[LinkedIn](https://www.linkedin.com/in/nikhila-reddy-0839b51b7) · [GitHub](https://github.com/nikhila102)
